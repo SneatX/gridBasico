@@ -5,3 +5,93 @@
     border: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: var(--color-primary);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 8px;
+
+    grid-template-areas: 
+        "menu menu menu menu menu menu menu menu menu menu menu menu"
+        "notification notification notification notification sales sales sales sales sales sales balance balance"
+        "notification notification notification notification sales sales sales sales sales sales balance balance"
+        "week week week week sales sales sales sales sales sales balance balance"
+        "week week week week sales sales sales sales sales sales devs devs"
+        "week week week week sales sales sales sales sales sales devs devs"
+        "product product product product product timeLine timeLine timeLine timeLine timeLine timeLine timeLine"
+        "product product product product product timeLine timeLine timeLine timeLine timeLine timeLine timeLine"
+        "product product product product product timeLine timeLine timeLine timeLine timeLine timeLine timeLine"
+       ;
+
+
+    width: 800px;
+    height: 600px;
+    margin: 15px auto;
+    background: var(--color-primary);
+}
+.container div{
+    /* background: var(--color-secundary); */
+    border-radius: 5px;
+}
+
+.item_1{
+    background: red;
+    grid-area: menu;
+}
+
+.item_2{
+    background: blue;
+    grid-area: notification;
+}
+
+.item_3{
+    background: orange;
+    grid-area: sales;
+}
+.item_4{
+    background: pink;
+    grid-area: balance;
+}
+
+.item_5{
+    background: salmon;
+    grid-area: week;
+}
+
+.item_6{
+    background: darkcyan;
+    grid-area: devs;
+}
+
+.item_7{
+    background: violet;
+    grid-area: product;
+}
+
+.item_8{
+    background: green;
+    grid-area: timeLine;
+}
+
+@media (width < 600px){
+    .container{
+        width: 100%;
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "menu"
+        "notification"
+        "sales"
+        "balance"
+        "week"
+        "devs"
+        "product"
+        "timeLine"
+       ;
+    }
+}
