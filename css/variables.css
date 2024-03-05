@@ -1,5 +1,4 @@
 :root{
-    --color-primary: skyBlue;
-    --color-secundary: #fff;
-    --color-shadow: 3px 3px 5px rgba(0, 0, 0, 0.122)
+    --color-background : #EFEFEF;
+    --color-primary : #FFFFFF;
 }
