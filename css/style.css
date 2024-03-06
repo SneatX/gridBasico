@@ -218,7 +218,7 @@ body{
 }
 
 .div-box2-item4{
-    background-color: var(--color-ternary);
+    background-color: var(--color-quaternary);
     width: 100%;
     height: 33%;
     padding: 10px;
@@ -259,11 +259,43 @@ body{
 
 /*FIN ITEM 5*/
 
-
+/*ITEM 6*/
 .item_6{
-    background: darkcyan;
+    background: var(--color-ternary);
     grid-area: devs;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
+.item_6 p{
+    font-size: 12px;
+}
+
+.item_6 button{
+    font-size: 10px;
+    height: 20%;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.div-container-item6{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_6 img, img3-item6{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 100%;
+}
+
+.img2-item6{
+    margin-left: -20px;
+}
+
+/*FIN ITEM 6*/
 
 .item_7{
     background: violet;
