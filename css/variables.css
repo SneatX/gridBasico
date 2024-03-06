@@ -1,4 +1,8 @@
 :root{
     --color-background : #EFEFEF;
     --color-primary : #FFFFFF;
+    --color-secundary: #74daf7;
+    --color-ternary: #d8ed71;
+
+    --font-primary: sans-serif;
 }

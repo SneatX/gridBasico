@@ -5,6 +5,7 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-primary);
 }
 
 body{
@@ -76,7 +77,8 @@ body{
     width: 50%;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right ,#8CD8F9, #D7F065);
+    justify-content: space-between;
+    background: linear-gradient(to right ,var(--color-secundary), var(--color-ternary));
 }
 
 .icons-box2-item1{
@@ -88,13 +90,39 @@ body{
     margin-left: 15%;
 }
 
+.profile-box2-item1{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-box2-item1 div{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.profile-box2-item1 img{
+    width: 40px;
+    height: 40px;
+
+    margin: 0 25px 0 10px;
+}
+
 /*FIN ITEM 1 -- NAV*/
 
-
+/*ITEM 2*/
 .item_2{
     background: blue;
     grid-area: notification;
+
+    display: flex;
+    flex-direction: column;
 }
+.item_2 img{
+    width: 25px;
+}
+
+/*FIN ITEM 2*/
 
 .item_3{
     background: orange;
@@ -124,6 +152,8 @@ body{
     background: green;
     grid-area: timeLine;
 }
+
+
 
 /* @media (width < 600px){
     .container{
