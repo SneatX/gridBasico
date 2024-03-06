@@ -9,6 +9,10 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background: var(--color-background);
 }
 
@@ -178,8 +182,8 @@ body{
 }
 
 .container-grafica1-item3{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important; 
 }
 
 .grafica1-item3{
@@ -349,8 +353,15 @@ body{
 /*FIN ITEM 7*/
 
 .item_8{
-    background: green;
+    background: var(--color-primary);
     grid-area: timeLine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_8 img{
+    width: 80%;
 }
 
 
